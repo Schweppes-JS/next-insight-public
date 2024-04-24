@@ -1,0 +1,26 @@
+{
+  "LAYOUT": {
+    "HEADLINE": {
+      "OWNER_FULL_NAME": "Maria Shlyakhtina",
+      "OWNER_POSITION": "clinical psychologist, gestalt therapist"
+    },
+    "NAVIGATION": {
+      "HOME": "Main",
+      "EXPERIENCE": "Background",
+      "PRICE": "Price",
+      "STUDY": "Educational projects",
+      "BLOG": "Blog",
+      "CONTACTS": "Contacts"
+    },
+    "FOOTER": {
+      "DEVELOPED_BY": "Handcrafted by Shvets Dmytro"
+    }
+  },
+  "HOME": {
+    "META": {
+      "TITLE": "Maria Shlyakhtina",
+      "DESCRIPTION": "Clinical psychologist, certified Gestalt therapist, teaching trainer, founder of the Center for Practical Psychology and Psychotherapy 'Insight', member of EFPA, Ukrainian Association of Psychotherapists, National Psychological Association.",
+      "KEYWORDS": "interpersonal relationships, family dynamics, crises, loneliness, complex feelings and experiences (such as guilt, shame, abandonment, etc.), grief, loss of a loved one, trauma, post-traumatic stress disorder, complex post-traumatic stress disorder, existential themes (loneliness, mortality, realization of life potential, loss of life meaning, self-discovery, feelings of hopelessness and emptiness of existence), eating disorders, psychosomatic disorders, chemical and non-chemical dependencies, work with sexuality, gender identity, sexual orientation, aggressive behavior, self-harm, suicidal thoughts and intentions, affective disorders (depression, mania, bipolar disorder), disorders of the anxious-phobic spectrum (anxiety, panic attacks, phobias, intrusive thoughts, etc.), working with individuals with oncological diagnoses and their relatives, working with military personnel and individuals who have experienced captivity and torture."
+    }
+  }
+}
