@@ -1,9 +1,13 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals"],
+  "plugins": ["@typescript-eslint"],
   "overrides": [
     {
       "files": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-      "rules": { "no-console": ["warn", { "allow": ["info", "error", "warn"] }] }
+      "rules": {
+        "no-console": ["warn", { "allow": ["info", "error", "warn"] }],
+        "@typescript-eslint/no-explicit-any": "warn"
+      }
     }
   ]
 }
