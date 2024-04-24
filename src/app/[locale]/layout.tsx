@@ -1,6 +1,5 @@
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Inter } from "next/font/google";
-import type { Metadata } from "next";
 import cn from "classnames";
 
 import { GenerateMetadataType, LayoutPropsType } from "@/types/appTypes";

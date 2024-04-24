@@ -1,4 +1,4 @@
-import { redirect } from "@/navigation";
+import { redirect } from "next/navigation";
 
 const Redirect = () => redirect("/en");
 
