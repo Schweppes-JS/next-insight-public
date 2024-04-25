@@ -6,6 +6,7 @@ import { DevelopedBy } from "../DevelopedBy/DevelopedBy";
 import { Navigation } from "../Navigation/Navigation";
 import { Headline } from "../Headline/Headline";
 import { Payments } from "../Payments/Payments";
+import { SubMenu } from "../SubMenu/SubMenu";
 
 export const Footer = (props: ParamsPropsType) => {
   return (
@@ -18,8 +19,9 @@ export const Footer = (props: ParamsPropsType) => {
           <LanguageSwitcher destination="footer" {...props} />
         </div>
         <hr className="my-2" />
-        <div className="flex gap-2 justify-between">
+        <div className="flex gap-4 justify-between items-center">
           <DevelopedBy />
+          <SubMenu />
           <Payments />
         </div>
       </div>
