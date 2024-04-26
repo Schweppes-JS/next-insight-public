@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sub-page__wrapper > h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-page__wrapper > h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sub-page__wrapper > h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sub-page__wrapper > h2 {
+    font-size: 1.75rem;
+  }
+}

@@ -23,7 +23,7 @@ const RootLayout = async ({ children, params }: LayoutPropsType) => {
     <html className="min-h-screen flex" lang={params.locale}>
       <body className={cn(inter.className, "flex flex-col bg-orange-50 flex-auto text-indigo-950")}>
         <Header params={params} />
-        <main className="w-full mx-auto flex flex-col max-w-screen-2xl px-1 sm:px-2 md:px-3 lg:px-4 xl:px-5 2xl:px-6 pt-32">{children}</main>
+        <main className="w-full mx-auto flex flex-col max-w-screen-2xl px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 2xl:px-7 pt-32 pb-12">{children}</main>
         <Footer params={params} />
       </body>
     </html>
