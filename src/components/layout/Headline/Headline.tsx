@@ -1,16 +1,20 @@
 import { useTranslations } from "next-intl";
+import cn from "classnames";
 
+import { LayoutPlace } from "@/types/appTypes";
 import { Link } from "@/navigation";
 
-export const Headline = () => {
+type HeadlinePropsType = { orientation?: LayoutPlace };
+
+export const Headline = ({ orientation = "header" }: HeadlinePropsType) => {
   const t = useTranslations("LAYOUT.HEADLINE");
 
   return (
-    <section className="self-center flex flex-col max-w-64">
-      <h1 className="text-xl md:text-2xl md:text-center">
+    <section className={cn("self-center flex flex-col max-w-64", { ["hidden sm:flex"]: orientation === "footer" })}>
+      <h1 className={cn("text-xl md:text-2xl md:text-center", { ["text-center"]: orientation === "footer" })}>
         <Link href="/">{t("OWNER_FULL_NAME")}</Link>
       </h1>
-      <p className="text-xs md:text-center">{t("OWNER_POSITION")}</p>
+      <p className={cn("text-xs md:text-center", { ["text-center"]: orientation === "footer" })}>{t("OWNER_POSITION")}</p>
     </section>
   );
 };

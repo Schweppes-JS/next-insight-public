@@ -14,7 +14,7 @@ export const HamburgerMenu = (props: ParamsPropsType) => {
   return (
     <Menu>
       <MenuButton className="self-center lg:!hidden">
-        <RxHamburgerMenu size={20} />
+        <RxHamburgerMenu size={24} />
       </MenuButton>
       <MenuList className="lg:!hidden">
         <MenuItem as={NavLink} href="/" className="w-full !text-right md:!hidden">

@@ -12,7 +12,7 @@ export const LanguageSwitcher = ({ params, orientation = "header", className, wi
   const selectedLayoutSegment = useSelectedLayoutSegment();
 
   return (
-    <section className={cn("self-center flex gap-4", { ["flex-col"]: orientation === "footer" }, className)}>
+    <section className={cn("self-center flex gap-2 sm:gap-4", { ["flex-col"]: orientation === "footer" }, className)}>
       <Link
         className={cn("w-full text-center underline-offset-4 ", {
           ["underline !decoration-red-400"]: params.locale === "en",

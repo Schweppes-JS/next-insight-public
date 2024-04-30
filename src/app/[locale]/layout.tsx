@@ -21,7 +21,7 @@ const RootLayout = async ({ children, params }: LayoutPropsType) => {
   unstable_setRequestLocale(params.locale);
 
   return (
-    <html className="min-h-screen flex" lang={params.locale}>
+    <html className="min-h-dvh flex" lang={params.locale}>
       <body className={cn(inter.className, "flex flex-col bg-orange-50 flex-auto text-indigo-950")}>
         <Providers>
           <Header params={params} />
