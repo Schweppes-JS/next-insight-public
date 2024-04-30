@@ -4,13 +4,14 @@ import cn from "classnames";
 import { facebookLink, ownPhone, phoneNumber, telegramLink, viberLink } from "@/constants/personalInfo";
 import { LayoutPlace, ParamsPropsType } from "@/types/appTypes";
 
-type SocialNetworksPropsType = { destination?: LayoutPlace } & ParamsPropsType;
+type SocialNetworksPropsType = { orientation?: LayoutPlace; classNames?: string; withHoverEffect?: boolean } & ParamsPropsType;
 
-export const SocialNetworks = ({ params, destination = "header" }: SocialNetworksPropsType) => (
-  <section className={cn("self-center gap-4", { ["flex"]: destination === "header", ["grid grid-cols-3"]: destination === "footer" })}>
+export const SocialNetworks = ({ params, orientation = "header", classNames, withHoverEffect }: SocialNetworksPropsType) => (
+  <section className={cn("self-center gap-4", { ["flex"]: orientation === "header", ["grid grid-cols-3"]: orientation === "footer" }, classNames)}>
     <a
       className={cn("self-center justify-self-center whitespace-nowrap", {
-        ["col-start-1	col-end-4	"]: destination === "footer",
+        ["col-start-1	col-end-4	"]: orientation === "footer",
+        ["hover:underline underline-offset-4 decoration-cyan-900"]: withHoverEffect,
       })}
       href={`tel:${phoneNumber}`}
     >

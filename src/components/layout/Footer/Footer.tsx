@@ -14,9 +14,9 @@ export const Footer = (props: ParamsPropsType) => {
       <div className="mx-auto	flex flex-col max-w-screen-2xl px-1 sm:px-2 md:px-3 lg:px-4 xl:px-5 2xl:px-6 pt-8 pb-2">
         <div className="flex gap-2 justify-between pb-2">
           <Headline />
-          <Navigation destination="footer" />
-          <SocialNetworks destination="footer" {...props} />
-          <LanguageSwitcher destination="footer" {...props} />
+          <Navigation orientation="footer" />
+          <SocialNetworks orientation="footer" {...props} />
+          <LanguageSwitcher orientation="footer" {...props} />
         </div>
         <hr className="my-2" />
         <div className="flex gap-4 justify-between items-center">

@@ -5,32 +5,32 @@ import { LayoutPlace } from "@/types/appTypes";
 
 import { NavLink } from "./NavLink";
 
-type NavigationPropsType = { destination?: LayoutPlace };
+type NavigationPropsType = { orientation?: LayoutPlace };
 
-export const Navigation = ({ destination = "header" }: NavigationPropsType) => {
+export const Navigation = ({ orientation = "header" }: NavigationPropsType) => {
   const t = useTranslations("LAYOUT.NAVIGATION");
 
   return (
-    <section className="self-center">
+    <section className={cn("self-center", { ["hidden md:block"]: orientation === "header" })}>
       <nav>
-        <ul className={cn("text-sm gap-4", { ["grid grid-cols-2"]: destination === "footer", ["flex"]: destination === "header" })}>
-          <li>
-            <NavLink href="/" title={t("HOME")} />
+        <ul className={cn("text-sm gap-4", { ["grid grid-cols-2"]: orientation === "footer", ["flex"]: orientation === "header" })}>
+          <li className="w-max">
+            <NavLink href="/">{t("HOME")}</NavLink>
           </li>
-          <li>
-            <NavLink href="/experience" title={t("EXPERIENCE")} />
+          <li className="w-max">
+            <NavLink href="/experience">{t("EXPERIENCE")}</NavLink>
           </li>
-          <li>
-            <NavLink href="/price" title={t("PRICE")} />
+          <li className="w-max">
+            <NavLink href="/price">{t("EXPERIENCE")}</NavLink>
           </li>
-          <li>
-            <NavLink href="/study" title={t("STUDY")} />
+          <li className="w-max">
+            <NavLink href="/study">{t("STUDY")}</NavLink>
           </li>
-          <li>
-            <NavLink href="/blog" title={t("BLOG")} />
+          <li className="w-max">
+            <NavLink href="/blog">{t("BLOG")}</NavLink>
           </li>
-          <li>
-            <NavLink href="/contacts" title={t("CONTACTS")} />
+          <li className="w-max">
+            <NavLink href="/contacts">{t("CONTACTS")}</NavLink>
           </li>
         </ul>
       </nav>

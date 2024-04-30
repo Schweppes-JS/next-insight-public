@@ -5,7 +5,11 @@ import { AppLocaleType } from "./types/appTypes";
 import { locales } from "./constants/appConfig";
 
 export default getRequestConfig(async ({ locale }) => {
-  const baseLocale = new Intl.Locale(locale).baseName as AppLocaleType;
-  if (!locales.includes(baseLocale)) notFound();
-  return { messages: (await import(`./messages/${baseLocale}.json`)).default };
+  try {
+    const baseLocale = new Intl.Locale(locale).baseName as AppLocaleType;
+    if (!locales.includes(baseLocale)) notFound();
+    return { messages: (await import(`./messages/${baseLocale}.json`)).default };
+  } catch {
+    notFound();
+  }
 });
