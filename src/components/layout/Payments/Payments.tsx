@@ -1,5 +1,5 @@
 import { PiPaypalLogoFill, PiBankBold } from "react-icons/pi";
-import { HiOutlineBanknotes } from "react-icons/hi2";
+import { BsCashCoin } from "react-icons/bs";
 
 export const Payments = () => {
   return (
@@ -12,7 +12,7 @@ export const Payments = () => {
           <PiBankBold size={20} />
         </li>
         <li>
-          <HiOutlineBanknotes size={20} />
+          <BsCashCoin className="translate-y-0.5" size={20} />
         </li>
       </ul>
     </section>
