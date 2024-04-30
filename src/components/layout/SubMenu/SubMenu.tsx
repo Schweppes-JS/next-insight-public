@@ -6,16 +6,16 @@ export const SubMenu = () => {
   const t = useTranslations("LAYOUT.FOOTER");
 
   return (
-    <section className="self-center ml-auto">
+    <section className="self-center sm:ml-auto">
       <nav>
         <ul className="flex flex-col">
-          <li className="flex">
-            <Link className="text-xs" href="/terms">
+          <li className="flex justify-center sm:justify-start">
+            <Link className="text-xs text-center" href="/terms">
               {t("TERMS")}
             </Link>
           </li>
-          <li className="flex">
-            <Link className="text-xs" href="/policy">
+          <li className="flex justify-center sm:justify-start">
+            <Link className="text-xs text-center" href="/policy">
               {t("POLICY")}
             </Link>
           </li>

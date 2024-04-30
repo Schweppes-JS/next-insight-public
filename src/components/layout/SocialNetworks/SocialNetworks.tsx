@@ -7,7 +7,9 @@ import { LayoutPlace, ParamsPropsType } from "@/types/appTypes";
 type SocialNetworksPropsType = { orientation?: LayoutPlace; classNames?: string; withHoverEffect?: boolean } & ParamsPropsType;
 
 export const SocialNetworks = ({ params, orientation = "header", classNames, withHoverEffect }: SocialNetworksPropsType) => (
-  <section className={cn("self-center gap-4", { ["flex"]: orientation === "header", ["grid grid-cols-3"]: orientation === "footer" }, classNames)}>
+  <section
+    className={cn("self-center gap-2 sm:gap-4", { ["flex"]: orientation === "header", ["grid grid-cols-3"]: orientation === "footer" }, classNames)}
+  >
     <a
       className={cn("self-center justify-self-center whitespace-nowrap", {
         ["col-start-1	col-end-4	"]: orientation === "footer",
