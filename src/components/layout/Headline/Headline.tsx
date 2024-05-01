@@ -11,7 +11,7 @@ export const Headline = ({ orientation = "header" }: HeadlinePropsType) => {
 
   return (
     <section className={cn("self-center flex flex-col max-w-64", { ["hidden sm:flex"]: orientation === "footer" })}>
-      <h1 className={cn("text-xl md:text-2xl md:text-center", { ["text-center"]: orientation === "footer" })}>
+      <h1 className={cn("text-nowrap text-xl md:text-2xl md:text-center", { ["text-center"]: orientation === "footer" })}>
         <Link href="/">{t("OWNER_FULL_NAME")}</Link>
       </h1>
       <p className={cn("text-xs md:text-center", { ["text-center"]: orientation === "footer" })}>{t("OWNER_POSITION")}</p>

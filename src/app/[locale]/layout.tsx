@@ -25,7 +25,9 @@ const RootLayout = async ({ children, params }: LayoutPropsType) => {
       <body className={cn(inter.className, "flex flex-col bg-orange-50 flex-auto text-indigo-950")}>
         <Providers>
           <Header params={params} />
-          <main className="w-full mx-auto flex flex-col max-w-screen-2xl px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 2xl:px-7 pt-32 pb-12">{children}</main>
+          <main className="w-full mx-auto flex flex-col max-w-screen-2xl px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 2xl:px-7 pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-12">
+            {children}
+          </main>
           <Footer params={params} />
         </Providers>
       </body>
