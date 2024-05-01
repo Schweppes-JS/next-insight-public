@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.study_page__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.study_page__wrapper > p {
+  text-indent: 1rem;
+}
+
 .sub-page__wrapper > h2 {
   margin-bottom: 0.5rem;
   font-size: 1rem;
