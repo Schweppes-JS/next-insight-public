@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import { facebookInsightIframe, facebookInsightLink } from "@/constants/enterpriseInfo";
+import { FacebookOfEnterprise } from "@/components/pages/study/FacebookOfEnterprise";
+import { facebookInsightLink } from "@/constants/enterpriseInfo";
 import InsightImage from "@/../public/insight.png";
 import { LocalePropsType } from "@/types/appTypes";
 import { withLocale } from "@/helpers/withLocale";
@@ -10,8 +11,8 @@ const Study = (props: LocalePropsType) => {
   const t = useTranslations("STUDY");
 
   return (
-    <section className="flex flex-col items-center gap-4">
-      <a href={facebookInsightLink} target="_blank">
+    <>
+      <a className="self-center" href={facebookInsightLink} target="_blank">
         <Image
           className="rounded-md shadow-lg"
           src={InsightImage}
@@ -22,8 +23,8 @@ const Study = (props: LocalePropsType) => {
           placeholder="blur"
         />
       </a>
-      <div
-        className="study_page__wrapper"
+      <section
+        className="flex flex-col gap-2 [&>p]:indent-4"
         dangerouslySetInnerHTML={{
           __html:
             props.params.locale === "en"
@@ -31,14 +32,8 @@ const Study = (props: LocalePropsType) => {
               : "<p>У квітні 2017 року мною був створений Центр практичної психології та психотерапії «Інсайт», який став місцем отримання психологічної допомоги, а також місцем надання послуг у сфері освіти для психологів та психотерапевтів.</p>\n<p>За цей час у центрі було проведено більше 100 навчальних семінарів та навчальних курсів, які відбувалися та відбуваються як в очному так і в онлайн форматі. За цей час більше півтора тисячі осіб мали можливість підвищити рівень власної компетенції, опанувати нові та вдосконалити вже наявні знання, навички та вміння, а також знайти нові шляхи для професійного розвитку.</p>\n<p>У центрі я прагну створити сприятливу атмосферу для обміну досвідом та взаємної підтримки серед фахівців. Кожен курс чи захід не лише розширює знання учасників, а й допомагає побудувати цінні професійні контакти та знайти нових колег та друзів у сфері психології та психотерапії.</p>\n<p>Приєднюйтеся до наших освітніх програм аби підвищити свою кваліфікацію та знайти спільноту однодумців, які разом з вами розвиваються і надихаються на нові досягнення. Запрошуємо до відкриття нових горизонтів!</p>",
         }}
       />
-      <iframe
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        src={facebookInsightIframe}
-        allowFullScreen
-        height="1000"
-        width="500"
-      />
-    </section>
+      <FacebookOfEnterprise />
+    </>
   );
 };
 

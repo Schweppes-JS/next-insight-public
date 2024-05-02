@@ -1,12 +1,13 @@
 "use client";
 
 import { useSelectedLayoutSegment } from "next/navigation";
+import { ForwardedRef, forwardRef } from "react";
 import cn from "classnames";
 
 import { LinkPropsType } from "@/types/libraryTypes";
 import { Link } from "@/navigation";
 
-export const NavLink = ({ href, children, className, ...rest }: LinkPropsType) => {
+export const NavLink = forwardRef(({ href, children, className, ...rest }: LinkPropsType, ref: ForwardedRef<HTMLAnchorElement>) => {
   const selectedLayoutSegment = useSelectedLayoutSegment();
 
   return (
@@ -20,8 +21,11 @@ export const NavLink = ({ href, children, className, ...rest }: LinkPropsType) =
       )}
       href={href}
       {...rest}
+      ref={ref}
     >
       {children}
     </Link>
   );
-};
+});
+
+NavLink.displayName = "NavLink";
