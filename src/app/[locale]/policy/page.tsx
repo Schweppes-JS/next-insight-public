@@ -3,7 +3,7 @@ import { LocalePropsType } from "@/types/appTypes";
 
 const Policy = (props: LocalePropsType) => (
   <section
-    className="sub-page__wrapper max-w-screen-xl bg-stone-50 rounded-md mx-auto shadow-lg p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 text-xs sm:text-sm md:text-base 2xl:text-lg"
+    className="[&>h2]:leading-none [&>h2]:font-black	[&>h2]:text-base md:[&>h2]:text-xl lg:[&>h2]:text-2xl xl:[&>h2]:text-3xl [&>h2]:mb-2 md:[&>h2]:mb-3 lg:[&>h2]:mb-4 w-full max-w-screen-xl bg-stone-50 rounded-md mx-auto shadow-lg p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 text-xs sm:text-sm md:text-base 2xl:text-lg"
     dangerouslySetInnerHTML={{
       __html:
         props.params.locale === "en"
