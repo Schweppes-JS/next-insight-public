@@ -2,12 +2,11 @@
 import { useContext, useEffect } from "react";
 
 import { useResizeObserver } from "@/helpers/useResizeObserver";
-
-import { GlobalContext } from "../Providers/GlobalContextProvider";
+import { DeviceWidthContext } from "@/store/deviceWidthContext";
 
 export const WidthGauge = () => {
   const { elementRef, elementWidth } = useResizeObserver<HTMLHRElement>();
-  const { setDeviceWidth } = useContext(GlobalContext);
+  const { setDeviceWidth } = useContext(DeviceWidthContext);
 
   useEffect(() => {
     if (elementWidth !== null) setDeviceWidth(elementWidth);

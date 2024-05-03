@@ -3,10 +3,10 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
-import { GlobalContextProvider } from "./GlobalContextProvider";
+import { DeviceWidthProvider } from "@/store/deviceWidthContext";
 
 export const Providers = ({ children }: { children: ReactNode }) => (
-  <GlobalContextProvider>
+  <DeviceWidthProvider>
     <ChakraProvider>{children}</ChakraProvider>
-  </GlobalContextProvider>
+  </DeviceWidthProvider>
 );
