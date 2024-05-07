@@ -11,7 +11,7 @@ export const PersonalInfo = () => {
     <>
       <section className="flex flex-col md:flex-row gap-4 md:gap-8 justify-center lg:max-w-screen-lg max-w-screen-md self-center">
         <Image
-          className="max-w-md md:max-w-full rounded-md shadow-lg flex-1 mx-auto"
+          className="w-full max-w-md md:max-w-full rounded-md shadow-lg flex-1 mx-auto"
           alt={t("OWNER_IMAGE_ALT_TEXT")}
           placeholder="blur"
           src={ownerImage}
