@@ -42,3 +42,4 @@ export const DeviceWidthProvider = memo(({ children }: { children: ReactNode }) 
 
   return <DeviceWidthContext.Provider value={{ deviceWidth, setDeviceWidth: handleDeviceWidth }}>{children}</DeviceWidthContext.Provider>;
 });
+DeviceWidthProvider.displayName = "DeviceWidthProvider";
