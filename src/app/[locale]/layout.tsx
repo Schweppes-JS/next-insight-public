@@ -1,5 +1,5 @@
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import cn from "classnames";
 
 import { GenerateMetadataType, LayoutPropsType } from "@/types/appTypes";
@@ -9,7 +9,7 @@ import { Header } from "@/components/layout/Header/Header";
 import { Footer } from "@/components/layout/Footer/Footer";
 import { locales } from "@/constants/appConfig";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["cyrillic", "latin"], weight: ["400", "700"] });
 
 export const generateStaticParams = () => locales.map((locale) => ({ locale }));
 

@@ -1,13 +1,15 @@
+import { Divider } from "@chakra-ui/react";
+
 import { EnterpriseDescription } from "@/components/pages/study/EnterpriseDescription";
 import { FacebookOfEnterprise } from "@/components/pages/study/FacebookOfEnterprise";
-import { LocalePropsType } from "@/types/appTypes";
 import { withLocale } from "@/helpers/withLocale";
 
-const Study = (props: LocalePropsType) => (
+const Study = withLocale((props) => (
   <>
     <EnterpriseDescription {...props} />
+    <Divider />
     <FacebookOfEnterprise />
   </>
-);
+));
 
-export default withLocale(Study);
+export default Study;
