@@ -23,6 +23,23 @@
       "TITLE": "Maria Shlyakhtina",
       "DESCRIPTION": "Clinical psychologist, certified Gestalt therapist, teaching trainer, founder of the Center for Practical Psychology and Psychotherapy 'Insight', member of EFPA, Ukrainian Association of Psychotherapists, National Psychological Association.",
       "KEYWORDS": "interpersonal relationships, family dynamics, crises, loneliness, complex feelings and experiences (such as guilt, shame, abandonment, etc.), grief, loss of a loved one, trauma, post-traumatic stress disorder, complex post-traumatic stress disorder, existential themes (loneliness, mortality, realization of life potential, loss of life meaning, self-discovery, feelings of hopelessness and emptiness of existence), eating disorders, psychosomatic disorders, chemical and non-chemical dependencies, work with sexuality, gender identity, sexual orientation, aggressive behavior, self-harm, suicidal thoughts and intentions, affective disorders (depression, mania, bipolar disorder), disorders of the anxious-phobic spectrum (anxiety, panic attacks, phobias, intrusive thoughts, etc.), working with individuals with oncological diagnoses and their relatives, working with military personnel and individuals who have experienced captivity and torture."
+    },
+    "PERSONAL_INFO": {
+      "FULL_NAME": "Maria Shlyakhtina",
+      "POSITION": "Clinical psychologist, certified Gestalt therapist, teaching trainer, founder of the Center for Practical Psychology and Psychotherapy 'Insight', member of EFPA, Ukrainian Association of Psychotherapists, National Psychological Association.",
+      "EPIGRAPH": "I invite you into a safe space for exploring yourself, your needs, aspirations, desires, into a space of trust and understanding. I invite you into the place of your life story, encounters with what has been and with what is happening now. I will be by your side on the journey of discovering life forces, support, hidden resources, and gaining inner integrity. With me, you will be heard and seen.",
+      "OWNER_IMAGE_ALT_TEXT": "The Photo of Maria Shlyakhtina"
+    },
+    "ENQUIRIES": {
+      "TITLE": "Enquiries",
+      "SUBTITLE": "I work with the following requests:",
+      "ENQUIRIES_IMAGE_ALT_TEXT": "The picture illustrating a client's request to a psychologist."
+    },
+    "EXPECTATIONS": {
+      "TITLE": "What to Expect",
+      "SUBTITLE": "As a result of therapy, you:",
+      "EXPECTATIONS_IMAGE_ALT_TEXT": "The image illustrating the client's expectations from therapy.",
+      "QUOTE": "«Healing is not recovery, but discovery. Discovery of hope in despair, discovery of answers where it seemed there were none, discovery that what matters is not what happened, but what we do with it.» (Edith Eger)"
     }
   },
   "NOT_FOUND": {

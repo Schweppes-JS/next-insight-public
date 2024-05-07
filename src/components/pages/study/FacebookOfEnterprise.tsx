@@ -4,10 +4,10 @@ import { Spinner } from "@chakra-ui/react";
 import { memo, useContext } from "react";
 
 import { facebookInsightSMIframe, facebookInsightXSIframe, facebookSMIframeWidth, facebookXSIframeWidth } from "@/constants/enterpriseInfo";
-import { GlobalContext } from "@/components/layout/Providers/GlobalContextProvider";
+import { DeviceWidthContext } from "@/store/deviceWidthContext";
 
 export const FacebookOfEnterprise = () => {
-  const { deviceWidth } = useContext(GlobalContext);
+  const { deviceWidth } = useContext(DeviceWidthContext);
 
   return deviceWidth ? (
     <MemorizedFacebookIframe isXS={deviceWidth.isXS} />

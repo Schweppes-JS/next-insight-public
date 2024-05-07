@@ -31,7 +31,7 @@ export const Navigation = ({ orientation = "header" }: NavigationPropsType) => {
           </li>
           <li className={cn({ ["w-max"]: orientation === "header" })}>
             <NavLink className={cn("text-center", { ["inline-block md:inline"]: orientation === "footer" })} href="/price">
-              {t("EXPERIENCE")}
+              {t("PRICE")}
             </NavLink>
           </li>
           <li className={cn({ ["w-max"]: orientation === "header" })}>
