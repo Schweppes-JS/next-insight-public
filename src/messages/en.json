@@ -40,6 +40,39 @@
       "SUBTITLE": "As a result of therapy, you:",
       "EXPECTATIONS_IMAGE_ALT_TEXT": "The image illustrating the client's expectations from therapy.",
       "QUOTE": "«Healing is not recovery, but discovery. Discovery of hope in despair, discovery of answers where it seemed there were none, discovery that what matters is not what happened, but what we do with it.» (Edith Eger)"
+    },
+    "FAQ": {
+      "TITLE": "Questions and answers",
+      "LIST": {
+        "1": {
+          "QUESTION": "How long does psychotherapy last?",
+          "ANSWER": "The duration of psychotherapy depends on the client's intentions, requests, and the level of personality organization. Some clients may find a relatively small number of sessions sufficient, while others may require a longer-term therapy. The duration of psychotherapy largely depends on the client's willingness to change, readiness to encounter different facets of their own personality, and ability to see the world from different perspectives. Additionally, the duration also relies on the ability of both the client and the therapist to form and maintain a therapeutic relationship. When a therapeutic alliance is established between the client and the therapist, the work can continue for quite some time, continuously enriching both parties. Eventually, the client feels fulfilled and ready to part ways. The necessary time for change and the construction of new meanings."
+        },
+        "2": {
+          "QUESTION": "What direction of psychotherapy do you work in?",
+          "ANSWER": "In my practice, I utilize Gestalt therapy and draw from humanistic and existential schools of psychotherapy. I employ a holistic approach, working with clients' bodily sensations, feelings, and cognition. I rely less on explanation and interpretation, and instead encourage clients to 'live through' the situation, respecting their existing experience and building upon it."
+        },
+        "3": {
+          "QUESTION": "Are our meetings confidential?",
+          "ANSWER": "Yes, in my work, I adhere to the ethical code of a psychotherapist, which includes maintaining confidentiality."
+        },
+        "4": {
+          "QUESTION": "Do you prescribe medication?",
+          "ANSWER": "No, that's not within my area of expertise. Medication is prescribed by a psychiatrist. In my practice, if necessary, I refer clients to a psychiatrist for consultation, and if deemed appropriate, they may prescribe pharmacological treatment."
+        },
+        "5": {
+          "QUESTION": "How does an online session proceed?",
+          "ANSWER": "Sessions are conducted using video communication through a convenient platform for the client (such as Zoom, Telegram, Messenger, Viber, etc.). In turn, you need to ensure that nothing and no one distracts you during the session, and that you are calm and not worried about anyone overhearing or seeing you during our work."
+        },
+        "6": {
+          "QUESTION": "How is payment handled?",
+          "ANSWER": "Payment is made to the individual entrepreneur's account, or in the case of funds from abroad, to the PayPal account. The first session must be paid for no later than 12 hours before the scheduled time. Subsequent sessions are paid for after the meeting."
+        },
+        "7": {
+          "QUESTION": "How do I schedule a session?",
+          "ANSWER": "To schedule a session, you should express your intention to start psychotherapy or receive psychological counseling through the provided contacts (booking is done via Viber/Telegram at the phone number: +380677378913). It's best to communicate via messaging, as there may not always be an opportunity to answer phone calls."
+        }
+      }
     }
   },
   "NOT_FOUND": {
