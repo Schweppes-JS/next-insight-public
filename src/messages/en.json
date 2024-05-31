@@ -75,6 +75,19 @@
       }
     }
   },
+  "EXPERIENCE": {
+    "EDUCATION": {
+      "TITLE": "Education and Psychotherapeutic Training",
+      "DESCRIPTION": "Lviv Ivan Franko National University, Faculty of Philosophy, Department of Psychology, specialization in Clinical Psychology, Master's degree (2008-2013). Gestalt Therapy. Ukrainian Psychotherapeutic University (within the framework of the Ukrainian Association of Psychotherapists) (2015-2023). Psychiatric Disorders Propaedeutics. Ukrainian Psychotherapeutic University (within the framework of the Ukrainian Association of Psychotherapists) (2015-2021). Personal Experience Project in Gestalt Therapy. Bukovyna Group Psychotherapy Project (within the framework of the Ukrainian Association of Psychotherapists) (2016-2021). Addiction Therapy. Ukrainian Institute of Practical Addictology (2018-2019). Individual and Group Psychotherapy for Military Personnel and Their Families. Yanina Sokolova Foundation (2023). Art Therapy. National Academy of Educational Sciences of Ukraine (2016-2017). Member of the Ukrainian Association of Psychotherapists, National Psychological Association, and European Federation of Psychological Associations."
+    },
+    "CERTIFICATES": {
+      "TITLE": "Certificates"
+    },
+    "PRACTICE": {
+      "TITLE": "Practice",
+      "DESCRIPTION": "Certified and registered Gestalt therapist of the Ukrainian Association of Psychotherapists. Clinical psychologist, psychotherapist in private psychotherapeutic practice (2015-present). Clinical psychologist, psychotherapist at the 'Insight' Center for Practical Psychology and Psychotherapy (2017-present). Training trainer at the 'Insight' Center for Practical Psychology and Psychotherapy (2017-present). Psychologist on the psychological support line for military personnel and their families 'Worth Living' at the Yanina Sokolova Foundation (2022-present). Psychologist on the psychological support line for oncology patients and their relatives 'Worth Living' at the Yanina Sokolova Foundation (2022-present). Psychologist at Lviv Correctional Colony No. 30, Lviv (2012-2014). Psychologist at Horodok Educational Complex No. 5, Horodok (2012-2013). Psychologist - volunteer at the 'Stavropigion' helpline (2011-2012)."
+    }
+  },
   "NOT_FOUND": {
     "TITLE": "Page Not Found"
   },
