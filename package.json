@@ -3,10 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start -p 8080",
-    "start:alt": "next start -p 8081",
+    "start:local": "env-cmd -f .env.local next dev -p 51111 || next dev -p 51111",
+    "start:dev": "env-cmd -f .env.development next dev -p 51111 || next dev -p 51111",
+    "start:staging": "env-cmd -f .env.staging next dev -p 51111 || next dev -p 51111",
+    "start:prod": "env-cmd -f .env.production next dev -p 51111 || next dev -p 51111",
+    "build:local": "env-cmd -f .env.local next build || next build",
+    "build:dev": "env-cmd -f .env.development next build || next build",
+    "build:staging": "env-cmd -f .env.staging next build || next build",
+    "build:prod": "env-cmd -f .env.production next build || next build",
+    "serve:local": "env-cmd -f .env.local next start -p 61111 || next start -p 61111",
+    "serve:dev": "env-cmd -f .env.development next start -p 65502 || next start -p 65502",
+    "serve:staging": "env-cmd -f .env.staging next start -p 48231 || next start -p 48231",
+    "serve:prod": "env-cmd -f .env.production next start -p 60303 || next start -p 60303",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,10 +29,11 @@
     "sharp": "^0.33.4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.7.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "env-cmd": "^10.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
     "postcss": "^8",
