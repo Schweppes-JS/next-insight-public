@@ -3,37 +3,11 @@ name: Deploy Insight Public
 on:
   push:
     branches:
-      - main
       - dev
+      - staging
+      - main
 
 jobs:
-  deploy_main:
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Build App
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy to server (production)
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd /root/next-insight-public
-            git checkout main
-            git pull
-            npm install
-            npm run build
-            pm2 restart public
-
   deploy_dev:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/dev'
@@ -45,7 +19,7 @@ jobs:
       - name: Build App
         run: |
           npm ci
-          npm run build
+          npm run build:dev
 
       - name: Deploy to server (development)
         uses: appleboy/ssh-action@v1.0.3
@@ -54,9 +28,63 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /root/dev/next-insight-public
+            cd ~/dev/next-insight-public
             git checkout dev
             git pull
             npm install
-            npm run build
+            npm run build:dev
             pm2 restart dev-public
+
+  deploy_staging:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/staging'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build App
+        run: |
+          npm ci
+          npm run build:staging
+
+      - name: Deploy to server (staging)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/staging/next-insight-public
+            git checkout staging
+            git pull
+            npm install
+            npm run build:staging
+            pm2 restart staging-public
+
+  deploy_main:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build App
+        run: |
+          npm ci
+          npm run build:prod
+
+      - name: Deploy to server (production)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/next-insight-public
+            git checkout main
+            git pull
+            npm install
+            npm run build:prod
+            pm2 restart public
