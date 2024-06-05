@@ -19,7 +19,7 @@ jobs:
       - name: Build App
         run: |
           npm ci
-          npm run build
+          npm run build:dev
 
       - name: Deploy to server (development)
         uses: appleboy/ssh-action@v1.0.3
@@ -32,7 +32,7 @@ jobs:
             git checkout dev
             git pull
             npm install
-            npm run build
+            npm run build:dev
             pm2 restart dev-public
 
   deploy_staging:
@@ -46,7 +46,7 @@ jobs:
       - name: Build App
         run: |
           npm ci
-          npm run build
+          npm run build:staging
 
       - name: Deploy to server (staging)
         uses: appleboy/ssh-action@v1.0.3
@@ -59,7 +59,7 @@ jobs:
             git checkout staging
             git pull
             npm install
-            npm run build
+            npm run build:staging
             pm2 restart staging-public
 
   deploy_main:
@@ -73,7 +73,7 @@ jobs:
       - name: Build App
         run: |
           npm ci
-          npm run build
+          npm run build:prod
 
       - name: Deploy to server (production)
         uses: appleboy/ssh-action@v1.0.3
@@ -86,5 +86,5 @@ jobs:
             git checkout main
             git pull
             npm install
-            npm run build
+            npm run build:prod
             pm2 restart public
