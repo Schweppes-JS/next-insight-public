@@ -10,6 +10,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 ### ⚙️ Miscellaneous Tasks
 
+- Update CHANGELOG (#32)
 - Update CHANGELOG (#29)
 - Update CHANGELOG (#28)
 
