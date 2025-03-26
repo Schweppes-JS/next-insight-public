@@ -16,6 +16,14 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 - Removed nvalid action input in release.yml
 
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG (#22)
+
+### 💼 Other
+
+- Removed comment lines in release.yml
+
 ## [1.0.0] - 2025-03-25
 
 ### 🚀 Added
