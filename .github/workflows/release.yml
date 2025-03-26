@@ -2,6 +2,8 @@ name: Release
 
 on:
   push:
+    branches:
+      - dev
     tags:
       - "*"
 
@@ -45,7 +47,7 @@ jobs:
           # The branch name to create or update
           branch: "chore/update-changelog"
 
-          # The base branch for the PR (assuming 'develop' is your default)
+          # The base branch for the PR (assuming 'dev' is your default)
           base: "dev"
 
           # Title for the PR
