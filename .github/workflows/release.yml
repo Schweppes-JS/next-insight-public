@@ -62,10 +62,6 @@ jobs:
           add-paths: |
             CHANGELOG.md
 
-          # How to handle updates to an existing branch?
-          # "replace" overwrites old contents; "merge", "rebase", and "squash" are also available.
-          update-method: "replace"
-
           # Optional: whether maintainers can modify the pull request (defaults to true)
           # maintainer-can-modify: true
 
