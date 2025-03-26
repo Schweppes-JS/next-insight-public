@@ -10,6 +10,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 ### ⚙️ Miscellaneous Tasks
 
+- Update CHANGELOG (#42) - some changes into dev
 - Update CHANGELOG (#41)
 
 ## [1.1.3] - 2025-03-26
