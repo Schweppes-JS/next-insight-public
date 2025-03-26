@@ -62,8 +62,5 @@ jobs:
           add-paths: |
             CHANGELOG.md
 
-          # Optional: whether maintainers can modify the pull request (defaults to true)
-          # maintainer-can-modify: true
-
           # Optional: create or keep the pull request as draft
           draft: true
