@@ -6,12 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## [Unreleased]
+## [1.2.0] - 2025-03-26
 
 ### ⚙️ Miscellaneous Tasks
 
-- Update CHANGELOG (#42) - some changes into dev
 - Update CHANGELOG (#41)
+
+### 💼 Other
+
+- V1.1.3 into staging
 
 ## [1.1.3] - 2025-03-26
 
@@ -21,7 +24,16 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Update CHANGELOG (#38) --- dev
 - Update CHANGELOG (#37) !----!
 
+### 💼 Other
+
+- V1.1.2
+
 ## [1.1.2] - 2025-03-26
+
+### 🐛 Fixed
+
+- Resolved conflicts - second try
+- Resolved conflicts
 
 ### ⚙️ Miscellaneous Tasks
 
@@ -30,6 +42,12 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Update CHANGELOG (#32)
 - Update CHANGELOG (#29)
 - Update CHANGELOG (#28)
+
+### 💼 Other
+
+- Merge pull request #35 from Schweppes-JS/dev
+- V1.1.1
+- Merge branch 'dev' into staging
 
 ## [1.1.1] - 2025-03-26
 
@@ -40,17 +58,8 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 ## [1.1.0] - 2025-03-26
 
-### 🚀 Added
-
-- Added scripts to run specific eviroments
-
-### 🔥 Removed
-
-- Remove unnecessary files
-
 ### 🐛 Fixed
 
-- Fixed CI/CD
 - Disabled CI/CD GitHub actions
 
 ### 💼 Other
@@ -83,6 +92,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 - Added release.yml
 - Added scripts to run specific eviroments
+- Added scripts to run specific eviroments
 - Added deploy process for development enviroment
 - Added display name for soem function/fixed build
 - Added Expectation & Enquiries components to main page
@@ -93,13 +103,19 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 ### 🔥 Removed
 
 - Remove unnecessary files
+- Remove unnecessary files
 
 ### 🐛 Fixed
 
 - Fixed CI/CD
+- Fixed CI/CD
 - Fixed main image width
 - Fixed facebook iframe size
 - Fixed root page server render
+
+### ⚙️ Miscellaneous Tasks
+
+- Sync dev with staging branch (#25)
 
 ### 💼 Other
 
@@ -126,7 +142,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Created Header component
 - Initial commit from Create Next App
 
-[unreleased]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.1.3..HEAD
+[1.2.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.1.3..v1.2.0
 [1.1.3]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.1.2..v1.1.3
 [1.1.2]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.1.1..v1.1.2
 [1.1.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.1.0..v1.1.1
