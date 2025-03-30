@@ -94,6 +94,14 @@ commit_parsers = [
   { message = "^.*: chore", group = "<!-- 4 -->⚙️ Miscellaneous Tasks" },
   { message = "^chore", group = "<!-- 4 -->⚙️ Miscellaneous Tasks" },
 
+  # Ignore change logging
+  { message = "^\\[Merge\\]", skip = true },
+  { message = "^.*: merge", skip = true },
+  { message = "^merge", skip = true },
+  { message = "^\\[Release\\]", skip = true },
+  { message = "^.*: release", skip = true },
+  { message = "^release", skip = true },
+
   # Catch all
   { message = "^.*", group = "<!-- 5 -->💼 Other" },
 ]
