@@ -6,11 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## [1.4.0] - 2025-03-30
+## [1.5.0] - 2025-03-30
 
 ### 🐛 Fixed
 
-- Some fix on dev
+- Some fix on dev 2 (#63)
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG (#51)
+
+### 💼 Other
+
+- Impkmented development 4 (#67)
+- Development 1 (#64)
 
 ## [1.3.3] - 2025-03-30
 
@@ -190,7 +199,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Created Header component
 - Initial commit from Create Next App
 
-[1.4.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.3..v1.4.0
+[1.5.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.3..v1.5.0
 [1.3.3]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.1..v1.3.3
 [1.3.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.0..v1.3.1
 [1.3.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.2.0..v1.3.0
