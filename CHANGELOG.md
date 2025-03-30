@@ -11,6 +11,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 ### 💼 Other
 
 - Something in staging (#86)
+- Development 6 (#90)
 
 ## [1.7.0] - 2025-03-30
 
