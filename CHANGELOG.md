@@ -6,11 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## [Unreleased]
+
+### 🐛 Fixed
+
+- Fixed git hub actions changelog
+
+### 💼 Other
+
+- Merge branch 'staging' into dev
+
 ## [1.6.1] - 2025-03-30
+
+### ⚙️ Miscellaneous Tasks
+
+- V1.5.1 into main
 
 ### 💼 Other
 
 - Some changes on main (#77)
+
+## [1.5.1] - 2025-03-30
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG
+
+### 💼 Other
+
+- Somefix 1 (#70)
+- 1.5.0 into staging
+- V.1.4.0 into staging
+- Merge pull request #60 from Schweppes-JS/staging
+- Hotfix test
 
 ## [1.6.0] - 2025-03-30
 
@@ -21,18 +49,7 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 ### ⚙️ Miscellaneous Tasks
 
 - Update CHANGELOG (#68)
-- V1.5.1 into main
-
-## [1.5.1] - 2025-03-30
-
-### ⚙️ Miscellaneous Tasks
-
 - Update CHANGELOG (#65)
-
-### 💼 Other
-
-- Somefix 1 (#70)
-- 1.5.0 into staging
 
 ## [1.5.0] - 2025-03-30
 
@@ -47,7 +64,6 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 ### 💼 Other
 
 - Impkmented development 4 (#67)
-- V.1.4.0 into staging
 - Development 1 (#64)
 
 ## [1.3.3] - 2025-03-30
@@ -59,7 +75,6 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Hotfix test
 - Merge pull request #55 from Schweppes-JS/staging
 - Hot fixed test (#61)
-- Merge pull request #60 from Schweppes-JS/staging
 
 ## [1.3.1] - 2025-03-30
 
@@ -72,7 +87,6 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 
 - Hotfix test
 - Merge pull request #54 from Schweppes-JS/main
-- Hotfix test
 - V1.3.0 into main
 
 ## [1.3.0] - 2025-03-27
@@ -230,9 +244,10 @@ See [conventional commits](https://www.conventionalcommits.org/) for commit guid
 - Created Header component
 - Initial commit from Create Next App
 
-[1.6.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.6.0..v1.6.1
-[1.6.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.5.1..v1.6.0
-[1.5.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.5.0..v1.5.1
+[unreleased]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.6.1..HEAD
+[1.6.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.5.1..v1.6.1
+[1.5.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.6.0..v1.5.1
+[1.6.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.5.0..v1.6.0
 [1.5.0]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.3..v1.5.0
 [1.3.3]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.1..v1.3.3
 [1.3.1]: https://github.com/Schweppes-JS/next-insight-public/compare/v1.3.0..v1.3.1
