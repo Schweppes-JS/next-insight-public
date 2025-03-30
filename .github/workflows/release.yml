@@ -42,16 +42,16 @@ jobs:
           # branch-token: ${{ secrets.GITHUB_TOKEN }}
 
           # The commit message for the changelog update
-          commit-message: "chore: update CHANGELOG"
+          commit-message: "merge: update CHANGELOG"
 
           # The branch name to create or update
-          branch: "chore/update-changelog"
+          branch: "update-changelog"
 
           # The base branch for the PR (assuming 'dev' is your default)
           base: "dev"
 
           # Title for the PR
-          title: "[Chore] - Update changelog"
+          title: "[Merge] - Update changelog"
 
           # Body text for the PR
           body: |
