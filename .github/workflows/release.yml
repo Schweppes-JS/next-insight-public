@@ -1,0 +1,66 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - dev
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  changelog:
+    name: Generate changelog
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate changelog
+        uses: orhun/git-cliff-action@v4
+        with:
+          config: ./cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: ./CHANGELOG.md
+          GITHUB_REPO: ${{ github.repository }}
+
+      - name: Create or Update PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          # The primary GitHub token for API calls such as creating/updating the PR
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          # Optionally, specify a separate token for branch creation/updates (v7 change):
+          # If omitted, it defaults to "token".
+          # branch-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # The commit message for the changelog update
+          commit-message: "merge: update CHANGELOG"
+
+          # The branch name to create or update
+          branch: "update-changelog"
+
+          # The base branch for the PR (assuming 'dev' is your default)
+          base: "dev"
+
+          # Title for the PR
+          title: "[Merge] - Update changelog"
+
+          # Body text for the PR
+          body: |
+            This PR updates the CHANGELOG.md with the latest changes.
+            Please review and merge.
+
+          # Only commit changes from these paths
+          add-paths: |
+            CHANGELOG.md
+
+          # Optional: create or keep the pull request as draft
+          draft: true
